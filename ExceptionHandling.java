@@ -27,6 +27,13 @@ public class ExceptionHandling {
             System.out.println("NegativeArraySizeException"+na.getMessage());
         }
         try{
+            System.out.println("Enter the Integer value:");
+            int number=scan.nextInt();
+        }
+         catch(InputMismatchException im){
+            System.out.println("InputMismatchException");
+        }  
+        try{
             System.out.println("Enter the index value:");
             int index=scan.nextInt();
             int[]array={1,2,3,4,5};
@@ -34,6 +41,7 @@ public class ExceptionHandling {
             System.out.println("Element at index"+index+":"+element);
 
         }
+
         catch(ArrayIndexOutOfBoundsException aio){
             System.out.println("ArrayIndexOutOfBoundException"+aio.getMessage());
         }
