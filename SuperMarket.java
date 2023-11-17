@@ -35,7 +35,7 @@ public class SuperMarket {
         productlist.forEach(p->System.out.println("["+p.id+" "+p.name+" "+p.price+" "+p.numOfItems+"]"));  
         System.out.println("Enter the product id which you want to buy:");
         int selectedproductid= scan.nextInt();
-        Optional<products>useritem=productlist.stream().filter(p->p.id==selectedproductid).findFirst();//.forEach(r->System.out.println("Selected product:"+r.id+" "+r.name+" "+r.price));
+        Optional<products>useritem=productlist.stream().filter(p->p.id==selectedproductid).findFirst();
         if(useritem.isPresent()){
             System.out.println("selected product:"+useritem.get().name);
             System.out.println("Enter the number of items you want to buy:");
