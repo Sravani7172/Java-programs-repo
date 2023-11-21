@@ -57,6 +57,9 @@ public class files {
         //create directory
         File file=new File("C:\\Myfiles\\java");
         System.out.println(file.mkdir());
+        //isfile
+        System.out.println("is there file:"+file1.isFile());
+        
 
 
         
