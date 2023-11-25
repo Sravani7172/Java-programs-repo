@@ -1,6 +1,6 @@
 import java.io.FileReader;
 import java.util.*;
-
+import java.io.*;
 public class fileMethods {
     public static void main(String[] args) {
         String path="C:\\Myfiles\\FileReader.txt";
